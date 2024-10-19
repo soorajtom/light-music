@@ -1,0 +1,45 @@
+# Exclude build output directories and intermediate files
+/build/
+/cmake-build-debug/
+/cmake-build-release/
+*.o
+*.d
+*.elf
+*.bin
+*.map
+
+# PlatformIO specific
+.pio/
+.vscode/
+.platformio/
+
+# Arduino IDE specific files
+.arduino15/
+*.ino.*
+
+# Core dumps and debug logs
+*.log
+*.core
+*.bak
+
+# Exclude IDE-specific settings
+*.DS_Store  # macOS
+.idea/      # JetBrains IDEs (CLion, etc.)
+.vscode/    # VSCode settings
+
+# Libraries and dependencies
+lib/         # Exclude downloaded libraries if they are regenerated
+
+# Temporary or OS-specific files
+*.swp
+*.swo
+Thumbs.db   # Windows
+*.~*        # Backup files
+
+# Exclude custom firmware blobs
+*.hex
+*.uf2
+
+# Secrets and credentials
+secrets.h    # If your sketch uses a `secrets.h` file for credentials
+wifi_config.h # Example config file for Wi-Fi settings
